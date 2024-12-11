@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>RUNNING CAT page</title>
+    <link rel="stylesheet" href="common.css" />
+    <style>
+        .main-container{
+            background-image: url("img/catBackground.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        body {
+            overflow: hidden;
+        }
+        .cat {
+            position: absolute;
+            top: 200px;
+            left: 1000px;
+            width: 1120px;
+            height: 102px;
+            background:url('img/cats.png') no-repeat;
+            background-size:cover;
+            animation:gif 1s infinite steps(10), run 30s linear infinite;
+        }
+        .cat2 {
+            position: absolute;
+            top: 400px;
+            left: 0;
+            width: 636px;
+            height: 102px;
+            background:url('img/cats Reverse.png') no-repeat;
+            background-size:cover;
+            animation:gif2 2s infinite steps(10), run 10s linear infinite;
+        }
+        .cat3 {
+            position: absolute;
+            top: 480px;
+            left: 600px;
+            width: 316px;
+            height: 204px;
+            background:url('img/cats Reverse.png') no-repeat;
+            background-size:cover;
+            animation:gif3 1s infinite steps(10), run 10s linear infinite;
+        }
+        @keyframes gif {
+            100% { background-position: -1590px 0;}
+        }
+        @keyframes gif2 {
+            100% { background-position: 1590px 0;}
+        }
+        @keyframes gif3 {
+            100% { background-position: -3175px 0;}
+        }
+    </style>
+</head>
+<body>
+<header>
+    <div class="logo"><a href="main.html">KYEONGRYOON’s ROOM</a></div>
+</header>
+<div class="main-container">
+    <div class="cat"></div>
+    <div class="cat2"></div>
+    <div class="cat3"></div>
+</div>
+
+<!--뛰는 고양이 이미지 출처: https://1yoouoo.tistory.com/38 -->
+<script src="cat.js"></script>
+</body>
+</html>

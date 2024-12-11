@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>VISIT page</title>
+    <link rel="stylesheet" href="common.css" />
+    <style>
+        h1{
+            text-align: center;
+            font-weight: normal;
+            padding-top: 50px;
+        }
+        #guestbook {
+            margin-top: 20px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+
+        input, textarea {
+            width: 100%;
+            margin: 10px 0;
+            padding: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            padding: 10px 15px;
+            background-color: #7a7a7a;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #646464;
+        }
+        #entries{
+            margin-top: 20px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 20px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <div class="logo"><a href="main.html">KYEONGRYOON’s ROOM</a></div>
+</header>
+<div class="main-container">
+    <h1 lang="ko">방명록 📝</h1>
+    <div id="guestbook" lang="ko">
+        <input type="text"  id="name" placeholder="이름을 입력하세요" required>
+        <textarea id="message" placeholder="메시지를 입력하세요" rows="4" required></textarea>
+        <button onclick="addEntry()">작성하기</button>
+    </div>
+
+    <div id="entries" lang="ko"></div>
+</div>
+
+<script src="visit.js"></script>
+</body>
+</html>

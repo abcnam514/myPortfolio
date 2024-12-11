@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LIGHT page</title>
+    <link rel="stylesheet" href="common.css" />
+    <style>
+        .main-container{
+            background: linear-gradient(180deg, rgba(252,252,252,1) 0%, rgba(143,143,143,1) 73%, rgba(99,99,99,1) 100%);
+        }
+        .main-container .work {
+            position: absolute;
+            top: 150px;
+            right: 200px;
+            background: url("img/work.png");
+            background-size: contain;
+            width: 600px;
+            height: 600px;
+        }
+        .toggle {
+            position:absolute;
+            top:40%;
+            left:38%;
+            transform:translateX(-50%);
+        }
+        .toggle input[type="radio"] {
+            display: none;
+        }
+        .toggle label {
+            cursor: pointer;
+        }
+        .toggle span {
+            display: inline-block;
+            padding: 10px 20px;
+            border-radius: 20px;
+            background: #ddd;
+            color: #555;
+            font-size: 16px;
+            margin: 0 5px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+
+        }
+        .toggle input[type = "radio"]:checked ~ span {
+            background: #333;
+            color: #fff;
+        }
+        h2{
+            position: absolute;
+            top: 50%;
+            left: 20%;
+            color: #666666;
+        }
+        h3{
+            position: absolute;
+            top: 55%;
+            left: 32%;
+            color: #666666;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <div class="logo"><a href="main.html">KYEONGRYOON’s ROOM</a></div>
+</header>
+<div class="main-container">
+    <div class="work"></div>
+
+    <div class="toggle">
+        <label>
+            <input type="radio" name="mode" value="light" checked>
+            <span class="light">Light</span>
+        </label>
+        <label>
+            <input type="radio" name="mode" value="dark">
+            <span class="dark">Dark</span>
+        </label>
+    </div>
+
+    <h2>Programmer's daily life</h2><br>
+        <h3>. . . ૮( ´⁰▱๋⁰` )ა</h3>
+</div>
+
+<script src="light.js"></script>
+</body>
+</html>

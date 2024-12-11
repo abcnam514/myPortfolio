@@ -1,0 +1,60 @@
+@font-face {
+    font-family: 'PixelMplus12';
+    src: url('fonts/PixelMplus12-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'DungGeunMo';
+    src: url('fonts/DungGeunMo.woff') format('woff');
+    src: url('fonts/DungGeunMo.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'DungGeunMo', 'PixelMplus12', 'monospace';
+}
+
+/* 영어 폰트 */
+:lang(en) {
+    font-family: 'PixelMplus12', monospace;
+}
+
+/* 한국어 폰트 */
+:lang(ko) {
+    font-family: 'DungGeunMo', monospace;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    background: white;
+    box-shadow: 0 3px 3px rgba(0,0,0,0.2);
+}
+.logo{
+    display: inline-block;
+    width: fit-content;
+    padding: 15px 15px;
+    font-size: 30px;
+}
+.logo a {
+    color: inherit; /* 기본 글자색 유지 */
+    text-decoration: none;
+}
+
+.logo a:hover {
+    text-shadow:
+            2px 0 0 #0017cc,
+            3px 3px 0 #666;
+
+}
+.main-container{
+    position: relative;
+    height: 100vh;
+    background: rgb(36,36,36);
+    background: url("img/Background.png");
+}

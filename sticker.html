@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>STICKER page</title>
+    <link rel="stylesheet" href="common.css" />
+    <style>
+        .main-container {
+            text-align: center;
+        }
+
+        h3{
+            padding-top: 50px;
+            padding-bottom: 30px;
+        }
+        #textInput {
+            width: 200px;
+            padding: 10px;
+            font-size: 16px;
+        }
+
+        #colorPicker {
+            padding: 3px;
+            font-size: 16px;
+        }
+
+        #addButton {
+            padding: 10px 20px;
+            font-size: 16px;
+            margin-left: 10px;
+            cursor: pointer;
+        }
+
+        #boxContainer {
+            margin-top: 30px;
+            position: relative;
+            min-height: 300px;
+        }
+        .draggable-box {
+            width: 200px;
+            padding: 15px;
+            margin-bottom: 10px;
+            background-color: lightblue;
+            border: 1px solid #000;
+            cursor: move;
+            position: absolute;
+        }
+
+        .draggable-box:hover {
+            transform: scale(1.1);
+            background-color: #ffffff;
+        }
+
+    </style>
+</head>
+<body>
+<header>
+    <div class="logo"><a href="main.html">KYEONGRYOON’s ROOM</a></div>
+</header>
+<div class="main-container" lang="ko">
+    <h3>원하는 문구를 적은 뒤 원하는 색상의 배경지를 고르고 나만의 스티커를 출력해봐 !</h3>
+    <input type="text" id="textInput" placeholder="텍스트를 입력하세요" />
+    <input type="color" id="colorPicker" value="#ADD8E6" />
+    <button id="addButton">출력</button>
+    <div id="boxContainer"></div>
+</div>
+
+<script src="sticker.js"></script>
+</body>
+</html>

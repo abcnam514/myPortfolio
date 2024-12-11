@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>EMOTION page</title>
+    <link rel="stylesheet" href="common.css" />
+    <style>
+        body{
+            height: 100vh;
+        }
+        h2{
+             text-align: center;
+             padding-top: 50px;
+             font-weight: 800;
+         }
+        ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            padding: 0;
+        }
+        .show li {
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+        .show li:hover {
+            transform: scale(1.1);
+        }
+
+        .show li img {
+            width: 150px;
+            border: 2px solid transparent;
+            transition: border-color 0.2s;
+        }
+        .show li.active img {
+            border-color: #ffffff;
+            border-radius: 100px;
+        }
+
+        .video-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 30px;
+        }
+        .video-container video {
+            width: 600px;
+            height: 400px;
+            max-width: 100%;
+            max-height: 80vh;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <div class="logo"><a href="main.html">KYEONGRYOON’s ROOM</a></div>
+</header>
+<div class="main-container">
+    <h2 lang="ko"> 각 색상에 어울리는 영상을 보여줘 !</h2>
+    <div class="show">
+        <ul lang="ko">
+            <li data-video="black.mp4"><img src="img/black.png"></li>
+            <li data-video="pink.mp4"><img src="img/pink.png"></li>
+            <li data-video="yellow.mp4"><img src="img/yellow.png"></li>
+            <li data-video="green.mp4"><img src="img/green.png"></li>
+            <li data-video="blue.mp4"><img src="img/blue.png"></li>
+            <li data-video="white.mp4"><img src="img/white.png"></li>
+        </ul>
+    </div>
+    <div class="video-container">
+        <video controls loop>
+            <source src="video/black.mp4" type="video/mp4">
+            브라우저가 비디오를 지원하지 않습니다.
+        </video>
+    </div>
+</div>
+
+<script src="emotion.js"></script>
+</body>
+</html>
